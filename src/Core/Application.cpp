@@ -16,6 +16,7 @@ namespace Sup {
 
         while (m_Running) {
             m_Window->OnUpdate();
+            m_VulkanContext->DrawFrame();
 
             if (m_Window->ShouldClose()) {
                 m_Running = false;
