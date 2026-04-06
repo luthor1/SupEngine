@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Core/Window.hpp"
+#include "Renderer/VulkanContext.hpp"
 #include <memory>
 
 namespace Sup {
@@ -15,6 +16,7 @@ namespace Sup {
 
     private:
         std::unique_ptr<Window> m_Window;
+        std::unique_ptr<VulkanContext> m_VulkanContext;
         bool m_Running = true;
     };
 

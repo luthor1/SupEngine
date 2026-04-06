@@ -5,6 +5,7 @@ namespace Sup {
 
     Application::Application() {
         m_Window = std::make_unique<Window>(WindowProps("SupEngine (Vulkan)", 1280, 720));
+        m_VulkanContext = std::make_unique<VulkanContext>(m_Window.get());
     }
 
     Application::~Application() {

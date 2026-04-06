@@ -47,6 +47,7 @@ set(SRC_FILES
     src/main.cpp
     src/Core/Application.cpp
     src/Core/Window.cpp
+    src/Renderer/VulkanContext.cpp
 )
 add_executable(SupEngine ${SRC_FILES})
 
